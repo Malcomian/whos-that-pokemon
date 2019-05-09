@@ -1,13 +1,12 @@
-# Playing Cards Simulator
+# Who's That Pokemon?
 
-This is a multiplayer app that simulates a standard deck of playing cards.
+This is a Node/Express/MongoDB project for creating shareable memes based on the popular "Who's That Pokemon" commercial break outro/intro from the original Pokemon TV series.
 
 ### Features
 
 * Login and registration using passport
-* JqueryUI for drag and drop features
-* Create public or private (unlisted) game lobbies
-* Realtime gameplay and chat messages using socket.io
+* Jquery for scaling and placing custom text and images inside your custom meme
+* All memes created by the user are public, but are obfuscated with a random UUID string inside the URL
 
 ### Version: 1.0.0
 
@@ -19,7 +18,9 @@ $ npm install
 
 ```sh
 $ npm start
+
 # Or run with Nodemon
+
 $ npm run dev
 
 # Visit http://localhost:8000
