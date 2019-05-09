@@ -17,6 +17,8 @@ $ npm install
 ```
 
 ```sh
+# start up MongoDB
+
 $ npm start
 
 # Or run with Nodemon
