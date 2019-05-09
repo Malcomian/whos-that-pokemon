@@ -22,13 +22,13 @@ $ npm install
 
 $ npm start
 
-# Or run with Nodemon
-
-$ npm run dev
-
-# Visit http://localhost:8000
+# Visit http://localhost:8000 inside your web browser
 ```
 
 ### MongoDB
 
 Open "config/keys.js" and add your MongoDB URI, local or Atlas connection strings
+
+### Known issues
+
+When showing a meme, the text sometimes does not display correctly at certain screen sizes within Chrome. Firefox works fine, though.
