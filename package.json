@@ -1,0 +1,30 @@
+{
+  "name": "cards_simulator",
+  "version": "1.0.0",
+  "description": "Card simulator with passport user authentication",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mdi/font": "^3.5.95",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.3.1",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.15.6",
+    "jquery": "^3.3.1",
+    "jquery-ui-dist": "^1.12.1",
+    "mongoose": "^5.4.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "socket.io": "^2.2.0",
+    "uuid": "^3.3.2"
+  }
+}

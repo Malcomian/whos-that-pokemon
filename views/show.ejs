@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <div id="main">
+    <div class="position-relative">
+      <video class="img-fluid" autoplay>
+        <source src="../Pokemon.mp4" type="video/mp4">
+      </video>
+      <div id="name" left="<%= meme.textX %>" top="<%= meme.textY %>" scale="<%= meme.textScale %>"
+        class="spin position-absolute">
+        <h4 class="poke">
+          <%= meme.text %>
+        </h4>
+      </div>
+      <div class="opacityIn">
+        <img id="img" left="<%= meme.imgX %>" top="<%= meme.imgY %>" scale="<%= meme.imgScale %>"
+          class="reveal position-absolute <%= meme.rendering %>" src="<%= meme.url %>">
+      </div>
+    </div>
+  </div>
+  <style>
+    body {
+      overflow: hidden;
+    }
+  </style>
+  <script src="/js/show.js"></script>
