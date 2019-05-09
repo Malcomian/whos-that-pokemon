@@ -5,6 +5,7 @@ This is a Node/Express/MongoDB project for creating shareable memes based on the
 ### Features
 
 * Login and registration using passport
+* Pick from a standard list of Pokemon image sprites using PokeAPI
 * Jquery for scaling and placing custom text and images inside your custom meme
 * All memes created by the user are public, but are obfuscated with a random UUID string inside the URL
 
