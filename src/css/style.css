@@ -26,7 +26,7 @@ body {
 
 h1 {
   font-family: 'pokemon_solidnormal';
-  color: rgb(255, 203, 5);
+  color: rgb(252, 237, 26);
   text-shadow:
     1px 1px 0 #2f6eb5,
     1px -1px 0 #2f6eb5,
@@ -79,7 +79,7 @@ h1 {
 
 .poke {
   font-family: 'pokemon_solidnormal';
-  color: #ffcb05;
+  color: #fced1a;
   text-shadow:
     1px 1px 0 #2f6eb5,
     1px -1px 0 #2f6eb5,
