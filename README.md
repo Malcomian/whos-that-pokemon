@@ -32,3 +32,5 @@ Open "config/keys.js" and add your MongoDB URI, local or Atlas connection string
 ### Known issues
 
 When showing a meme, the text sometimes does not display correctly at certain screen sizes within Chrome. Firefox works fine, though.
+
+asdf
