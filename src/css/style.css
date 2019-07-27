@@ -1,7 +1,11 @@
-@import url('../fonts/stylesheet.css');
-
+@import url("../fonts/stylesheet.css");
 .container {
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+.page {
+  max-width: 800px;
 }
 
 body {
@@ -26,82 +30,15 @@ body {
 
 h1 {
   font-family: 'pokemon_solidnormal';
-  color: rgb(252, 237, 26);
-  text-shadow:
-    1px 1px 0 #2f6eb5,
-    1px -1px 0 #2f6eb5,
-    -1px 1px 0 #2f6eb5,
-    -1px -1px 0 #2f6eb5,
-
-    2px 2px 0 #2f6eb5,
-    2px -2px 0 #2f6eb5,
-    -2px 2px 0 #2f6eb5,
-    -2px -2px 0 #2f6eb5,
-
-    1px 2px 0 #2f6eb5,
-    1px -2px 0 #2f6eb5,
-    -1px 2px 0 #2f6eb5,
-    -1px -2px 0 #2f6eb5,
-
-    2px 1px 0 #2f6eb5,
-    2px -1px 0 #2f6eb5,
-    -2px 1px 0 #2f6eb5,
-    -2px -1px 0 #2f6eb5,
-
-    3px 3px 0 #2f6eb5,
-    3px -3px 0 #2f6eb5,
-    -3px 3px 0 #2f6eb5,
-    -3px -3px 0 #2f6eb5,
-
-    2px 3px 0 #2f6eb5,
-    2px -3px 0 #2f6eb5,
-    -2px 3px 0 #2f6eb5,
-    -2px -3px 0 #2f6eb5,
-
-    3px 2px 0 #2f6eb5,
-    3px -2px 0 #2f6eb5,
-    -3px 2px 0 #2f6eb5,
-    -3px -2px 0 #2f6eb5,
-
-    1px 3px 0 #2f6eb5,
-    1px -3px 0 #2f6eb5,
-    -1px 3px 0 #2f6eb5,
-    -1px -3px 0 #2f6eb5,
-
-    3px 1px 0 #2f6eb5,
-    3px -1px 0 #2f6eb5,
-    -3px 1px 0 #2f6eb5,
-    -3px -1px 0 #2f6eb5,
-
-    -6px 6px 0 #1b316a;
+  color: #fced1a;
+  text-shadow: 1px 1px 0 #2f6eb5, 1px -1px 0 #2f6eb5, -1px 1px 0 #2f6eb5, -1px -1px 0 #2f6eb5,  2px 2px 0 #2f6eb5, 2px -2px 0 #2f6eb5, -2px 2px 0 #2f6eb5, -2px -2px 0 #2f6eb5,  1px 2px 0 #2f6eb5, 1px -2px 0 #2f6eb5, -1px 2px 0 #2f6eb5, -1px -2px 0 #2f6eb5,  2px 1px 0 #2f6eb5, 2px -1px 0 #2f6eb5, -2px 1px 0 #2f6eb5, -2px -1px 0 #2f6eb5,  3px 3px 0 #2f6eb5, 3px -3px 0 #2f6eb5, -3px 3px 0 #2f6eb5, -3px -3px 0 #2f6eb5,  2px 3px 0 #2f6eb5, 2px -3px 0 #2f6eb5, -2px 3px 0 #2f6eb5, -2px -3px 0 #2f6eb5,  3px 2px 0 #2f6eb5, 3px -2px 0 #2f6eb5, -3px 2px 0 #2f6eb5, -3px -2px 0 #2f6eb5,  1px 3px 0 #2f6eb5, 1px -3px 0 #2f6eb5, -1px 3px 0 #2f6eb5, -1px -3px 0 #2f6eb5,  3px 1px 0 #2f6eb5, 3px -1px 0 #2f6eb5, -3px 1px 0 #2f6eb5, -3px -1px 0 #2f6eb5,  -6px 6px 0 #1b316a;
   letter-spacing: 5px;
 }
 
 .poke {
   font-family: 'pokemon_solidnormal';
   color: #fced1a;
-  text-shadow:
-    1px 1px 0 #2f6eb5,
-    1px -1px 0 #2f6eb5,
-    -1px 1px 0 #2f6eb5,
-    -1px -1px 0 #2f6eb5,
-
-    2px 2px 0 #2f6eb5,
-    2px -2px 0 #2f6eb5,
-    -2px 2px 0 #2f6eb5,
-    -2px -2px 0 #2f6eb5,
-
-    1px 2px 0 #2f6eb5,
-    1px -2px 0 #2f6eb5,
-    -1px 2px 0 #2f6eb5,
-    -1px -2px 0 #2f6eb5,
-
-    2px 1px 0 #2f6eb5,
-    2px -1px 0 #2f6eb5,
-    -2px 1px 0 #2f6eb5,
-    -2px -1px 0 #2f6eb5,
-
-    -4px 4px 0 #1b316a;
+  text-shadow: 1px 1px 0 #2f6eb5, 1px -1px 0 #2f6eb5, -1px 1px 0 #2f6eb5, -1px -1px 0 #2f6eb5,  2px 2px 0 #2f6eb5, 2px -2px 0 #2f6eb5, -2px 2px 0 #2f6eb5, -2px -2px 0 #2f6eb5,  1px 2px 0 #2f6eb5, 1px -2px 0 #2f6eb5, -1px 2px 0 #2f6eb5, -1px -2px 0 #2f6eb5,  2px 1px 0 #2f6eb5, 2px -1px 0 #2f6eb5, -2px 1px 0 #2f6eb5, -2px -1px 0 #2f6eb5,  -4px 4px 0 #1b316a;
   letter-spacing: 2px;
 }
 
@@ -114,17 +51,22 @@ h1 {
 }
 
 .silhouette {
-  filter: brightness(0);
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
 }
 
 .pixelated {
   -ms-interpolation-mode: nearest-neighbor;
   image-rendering: optimizeSpeed;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-pixelated;
   image-rendering: pixelated;
 }
 
 .wrapper {
-  transform-origin: top left;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
 }
 
 .overflow-hiddens {
@@ -137,42 +79,102 @@ h1 {
   overflow: hidden;
 }
 
-@keyframes spinIn {
+@-webkit-keyframes spinIn {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
     opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
     opacity: 1;
   }
 }
-@keyframes reveal {
-  from {filter: brightness(0)}
-  to {filter: brightness(1)}
+
+@keyframes spinIn {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
 }
+
+@-webkit-keyframes reveal {
+  from {
+    -webkit-filter: brightness(0);
+            filter: brightness(0);
+  }
+  to {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+
+@keyframes reveal {
+  from {
+    -webkit-filter: brightness(0);
+            filter: brightness(0);
+  }
+  to {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+
+@-webkit-keyframes opacityIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes opacityIn {
-  from {opacity: 0}
-  to {opacity: 1}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .spin {
-  animation-name: spinIn;
-  animation-duration: 0.5s;
-  animation-delay: 5s;
-  animation-fill-mode: both;
+  -webkit-animation-name: spinIn;
+          animation-name: spinIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .reveal {
-  animation-name: reveal;
-  animation-duration: 0.5s;
-  animation-delay: 5s;
-  animation-fill-mode: both;
+  -webkit-animation-name: reveal;
+          animation-name: reveal;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .opacityIn {
-  animation-name: opacityIn;
-  animation-duration: 1s;
-  animation-delay: 0.2s;
-  animation-fill-mode: both;
+  -webkit-animation-name: opacityIn;
+          animation-name: opacityIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
+/*# sourceMappingURL=style.css.map */

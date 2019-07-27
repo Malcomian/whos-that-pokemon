@@ -44,27 +44,43 @@ $(document).ready(() => {
 
   $('select[name="rendering"]').change(function (e) {
     $('.preview-image').toggleClass('pixelated');
-  })
+  });
 
-  var numPokemon = 809;
-  for (var i = 1; i <= numPokemon; i++) {
-    var str = '<tr class="pokemon" id="' + i + '"></tr>';
-    $('#pokeAPI').append(str);
-  }
-  var pokedex = [];
-  for (var i = 1; i <= numPokemon; i++) {
-    if(i * 0.1 < 1) {
-      $('.pokemon#' + i).append(`<td>00${i}</td>`);
-    } else if (i * 0.1 < 10) {
-      $('.pokemon#' + i).append(`<td>0${i}</td>`);
-    } else {
-      $('.pokemon#' + i).append(`<td>${i}</td>`);
+  $('#fetch').click(function () {
+    console.log(`Fetching ${$(this).val()} pokemon...`)
+    findPokemon($('#num-pokemon').val());
+  });
+
+  function findPokemon(numPokemon) {
+    // reset the list first
+    $('#pokeAPI').html('');
+    // var numPokemon = 809;
+    for (var i = 1; i <= numPokemon; i++) {
+      var str = '<tr class="pokemon" id="' + i + '"></tr>';
+      $('#pokeAPI').append(str);
     }
-    $.get('https://pokeapi.co/api/v2/pokemon/' + i, function (res) {
-      pokedex[res.id] = res;
-      var url = res.sprites.front_default;
-      var img = `<img src="${url}">`;
-      $('.pokemon#' + res.id).append(`<td>${img}</td><td>${res.name}</td><td><input type="text" value="${url}" class="form-control"></td>`);
-    }, 'json');
+    var pokedex = [];
+    for (var i = 1; i <= numPokemon; i++) {
+      if(i * 0.1 < 1) {
+        $('.pokemon#' + i).append(`<td>00${i}</td>`);
+      } else if (i * 0.1 < 10) {
+        $('.pokemon#' + i).append(`<td>0${i}</td>`);
+      } else {
+        $('.pokemon#' + i).append(`<td>${i}</td>`);
+      }
+      $.get('https://pokeapi.co/api/v2/pokemon/' + i, function (res) {
+        pokedex[res.id] = res;
+        var url = res.sprites.front_default;
+        var img = `<img src="${url}">`;
+        $('.pokemon#' + res.id).append(`<td>${img}</td><td>${res.name}</td><td><input type="text" value="${url}" class="form-control mb-2"><button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-primary poke">Copy Link</button></td>`);
+        $(`.pokemon#${res.id} button`).click(function () {
+          let data = $(`.pokemon#${res.id} input`).val();
+          console.log(`Copying link... ${data}`);
+          $(`input[name="url"]`).val(data);
+          $('.preview-image').attr('src', data);
+        })
+      }, 'json');
+  }
+  
   }
 })

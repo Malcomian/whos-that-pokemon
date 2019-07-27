@@ -58,6 +58,11 @@
                   <div class="modal-body">
                     <h3>Sprites from <a href="https://pokeapi.co/">PokeAPI</a>:</h3>
                     <div class="form-group">
+                      <label for="num-pokemon">Number of Pokemon to search for:</label>
+                      <input type="number" id="num-pokemon" class="form-control mb-2" min="1" max="807" value="151">
+                      <button type="button" id="fetch" class="btn btn-primary poke">Fetch Sprites</button>
+                    </div>
+                    <div class="form-group">
                       <label for="search-filter">Search:</label>
                       <input type="text" id="search-filter" class="form-control">
                     </div>

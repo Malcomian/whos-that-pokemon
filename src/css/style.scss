@@ -1,0 +1,182 @@
+@import url('../fonts/stylesheet.css');
+
+.container {
+  transition: all 0.2s;
+}
+
+.page {
+  max-width: 800px;;
+}
+
+body {
+  min-width: 300px;
+  background-color: #b51919;
+}
+
+.btn {
+  border-top: 4px solid rgba(255, 255, 255, 0.2);
+  border-left: 4px solid rgba(255, 255, 255, 0.2);
+  border-right: 4px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+  /* border: 1px solid #1b316a; */
+}
+
+.btn:hover {
+  border-top: 4px solid rgba(255, 255, 255, 0.5);
+  border-left: 4px solid rgba(255, 255, 255, 0.5);
+  border-right: 4px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-family: 'pokemon_solidnormal';
+  color: rgb(252, 237, 26);
+  text-shadow:
+    1px 1px 0 #2f6eb5,
+    1px -1px 0 #2f6eb5,
+    -1px 1px 0 #2f6eb5,
+    -1px -1px 0 #2f6eb5,
+
+    2px 2px 0 #2f6eb5,
+    2px -2px 0 #2f6eb5,
+    -2px 2px 0 #2f6eb5,
+    -2px -2px 0 #2f6eb5,
+
+    1px 2px 0 #2f6eb5,
+    1px -2px 0 #2f6eb5,
+    -1px 2px 0 #2f6eb5,
+    -1px -2px 0 #2f6eb5,
+
+    2px 1px 0 #2f6eb5,
+    2px -1px 0 #2f6eb5,
+    -2px 1px 0 #2f6eb5,
+    -2px -1px 0 #2f6eb5,
+
+    3px 3px 0 #2f6eb5,
+    3px -3px 0 #2f6eb5,
+    -3px 3px 0 #2f6eb5,
+    -3px -3px 0 #2f6eb5,
+
+    2px 3px 0 #2f6eb5,
+    2px -3px 0 #2f6eb5,
+    -2px 3px 0 #2f6eb5,
+    -2px -3px 0 #2f6eb5,
+
+    3px 2px 0 #2f6eb5,
+    3px -2px 0 #2f6eb5,
+    -3px 2px 0 #2f6eb5,
+    -3px -2px 0 #2f6eb5,
+
+    1px 3px 0 #2f6eb5,
+    1px -3px 0 #2f6eb5,
+    -1px 3px 0 #2f6eb5,
+    -1px -3px 0 #2f6eb5,
+
+    3px 1px 0 #2f6eb5,
+    3px -1px 0 #2f6eb5,
+    -3px 1px 0 #2f6eb5,
+    -3px -1px 0 #2f6eb5,
+
+    -6px 6px 0 #1b316a;
+  letter-spacing: 5px;
+}
+
+.poke {
+  font-family: 'pokemon_solidnormal';
+  color: #fced1a;
+  text-shadow:
+    1px 1px 0 #2f6eb5,
+    1px -1px 0 #2f6eb5,
+    -1px 1px 0 #2f6eb5,
+    -1px -1px 0 #2f6eb5,
+
+    2px 2px 0 #2f6eb5,
+    2px -2px 0 #2f6eb5,
+    -2px 2px 0 #2f6eb5,
+    -2px -2px 0 #2f6eb5,
+
+    1px 2px 0 #2f6eb5,
+    1px -2px 0 #2f6eb5,
+    -1px 2px 0 #2f6eb5,
+    -1px -2px 0 #2f6eb5,
+
+    2px 1px 0 #2f6eb5,
+    2px -1px 0 #2f6eb5,
+    -2px 1px 0 #2f6eb5,
+    -2px -1px 0 #2f6eb5,
+
+    -4px 4px 0 #1b316a;
+  letter-spacing: 2px;
+}
+
+#sortable th {
+  cursor: pointer;
+}
+
+.nav-item {
+  outline: none;
+}
+
+.silhouette {
+  filter: brightness(0);
+}
+
+.pixelated {
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: optimizeSpeed;
+  image-rendering: pixelated;
+}
+
+.wrapper {
+  transform-origin: top left;
+}
+
+.overflow-hiddens {
+  overflow: hidden;
+}
+
+#main {
+  width: 480px;
+  height: 270px;
+  overflow: hidden;
+}
+
+@keyframes spinIn {
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes reveal {
+  from {filter: brightness(0)}
+  to {filter: brightness(1)}
+}
+@keyframes opacityIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.spin {
+  animation-name: spinIn;
+  animation-duration: 0.5s;
+  animation-delay: 5s;
+  animation-fill-mode: both;
+}
+
+.reveal {
+  animation-name: reveal;
+  animation-duration: 0.5s;
+  animation-delay: 5s;
+  animation-fill-mode: both;
+}
+
+.opacityIn {
+  animation-name: opacityIn;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
