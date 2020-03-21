@@ -13,9 +13,9 @@ require('./config/passport')(passport);
 // DB Config
 const keys = require('./config/keys');
 
-// Connect to MongoDB
+// Connect to MongoDB - use keys.local to connect to local MongoDB or use keys.external to connect to Atlas
 mongoose
-  .connect(keys.external, {
+  .connect(keys.local, {
     useNewUrlParser: true
   })
   .then(() => console.log('MongoDB Connected'))
