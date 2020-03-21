@@ -15,7 +15,9 @@ const keys = require('./config/keys');
 
 // Connect to MongoDB
 mongoose
-  .connect(keys.local, { useNewUrlParser: true })
+  .connect(keys.external, {
+    useNewUrlParser: true
+  })
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
@@ -52,9 +54,11 @@ app.use(function (req, res, next) {
   next();
 });
 
+const defaultRoute = require('./config/defaultRoute')
+
 // Routes
-app.use('/', require('./routes/index.js'));
-app.use('/users', require('./routes/users.js'));
+app.use(`${defaultRoute}/`, require('./routes/index'));
+app.use(`${defaultRoute}/users`, require('./routes/users'));
 
 // Static
 app.use(express.static(__dirname + '/src'));

@@ -1,7 +1,7 @@
 <div class="page container">
   <div class="mt-5 card card-body">
     <h1 class="text-center mb-3">Register</h1>
-    <% include ./partials/messages %>
+    <%- include("./partials/messages") %>
     <p class="alert alert-danger">Note: Any account made on the site must use a unique (even fake) email address. But there is no password recovery system! You've been warned!</p>
     <form action="/users/register" method="POST">
       <div class="form-group">

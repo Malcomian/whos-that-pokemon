@@ -5,7 +5,8 @@
 }
 
 .page {
-  max-width: 800px;;
+  max-width: 800px;
+  ;
 }
 
 body {
@@ -146,18 +147,31 @@ h1 {
     transform: rotate(0deg);
     opacity: 0;
   }
+
   to {
     transform: rotate(360deg);
     opacity: 1;
   }
 }
+
 @keyframes reveal {
-  from {filter: brightness(0)}
-  to {filter: brightness(1)}
+  from {
+    filter: brightness(0)
+  }
+
+  to {
+    filter: brightness(1)
+  }
 }
+
 @keyframes opacityIn {
-  from {opacity: 0}
-  to {opacity: 1}
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 .spin {

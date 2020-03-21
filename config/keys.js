@@ -1,9 +1,12 @@
-dbPassword = 'mongodb+srv://YOUR_USERNAME_HERE:'+ encodeURIComponent('YOUR_PASSWORD_HERE') + '@CLUSTER_NAME_HERE.mongodb.net/test?retryWrites=true';
+let password = 'your password to your mongo cloud';
+let user_name = 'your username';
+let cluster_name = 'your clustername';
+dbPassword = `mongodb+srv://${user_name}:${password}@${cluster_name}`;
 
 local = 'mongodb://localhost/whosthatpokemon';
 
 module.exports = {
-    mongoURI: dbPassword,
+    external: dbPassword,
     local: local,
-    secret: 'a totally secret key that nobody would guess ever in a million years'
+    secret: 'your secret string'
 };
